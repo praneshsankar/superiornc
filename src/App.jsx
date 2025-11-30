@@ -5,6 +5,7 @@ import chairImg from './assets/chair.jpg';
 import tableImg from './assets/table.jpg';
 import jrImg from './assets/jr.jpg';
 import logoImg from './assets/logo.jpg';
+import interiorImg from './assets/interior.jpg';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,8 +95,8 @@ const App = () => {
       <section id="home" className="relative min-h-screen flex items-center justify-center pb-20">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1635273051937-c7cb0ae64860?auto=format&fit=crop&q=80&w=1920" 
-            alt="Barbershop Interior" 
+            src={interiorImg} 
+            alt="Barbershop Interior"
             className="w-full h-full object-cover opacity-40 grayscale"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/50 to-transparent"></div>
